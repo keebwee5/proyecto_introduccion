@@ -6,7 +6,7 @@ import page1 from '../assets/img/vanillapage.png'
 import frameimg from '../assets/img/frameworks3.png'
 import gitimg from '../assets/img/githubimg.png'
 import vrimg from '../assets/img/vrimg.png'
-import Hangman from './hangman';
+import Hangman from './Hangman';
 import modevaimg from '../assets/img/modevaimg.png'
 import Teachableai from './Teachableai';
 
