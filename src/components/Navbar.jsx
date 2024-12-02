@@ -9,28 +9,27 @@ function Navbar() {
   
   const [nav, setNav] = useState(false)
 
-
   const handleNav = () => {
     setNav(!nav)
   }
 
   return (
-    <nav className='flex justify-between items-center text-white py-5 max-w-[1240px] mx-auto px-4'>
+    <nav className='fixed top-0 inset-x-0 flex justify-between items-center text-white w-[1240px] py-3 mx-auto px-4'>
         <h1 className='w-full text-2xl font-bold text-[#4998A9] xl:text-3xl md:text-3xl sm:text-2xl'>
           PORTFOLIO.
         </h1>
         <ul className='hidden md:flex'>
             <li className="mx-5">
-              <Navbutton content="Home"/>
+              <button><Navbutton content="Home"/></button>
             </li>
             <li className="mx-5">
-              <Navbutton content="About"/>
+              <button><Navbutton content="About"/></button>
             </li>
             <li className="mx-5">
-              <Navbutton content="Projects"/>
+              <button><Navbutton content="Projects"/></button>
             </li>
             <li className="ml-5">
-              <Navbutton content="Contact"/>
+              <button><Navbutton content="Contact"/></button>
             </li>
         </ul>
         <div onClick={handleNav} className="block md:hidden">
